@@ -201,7 +201,7 @@ class Selectize extends Nette\Forms\Controls\BaseControl
 	}
 
 
-	public function loadHttpData()
+	public function loadHttpData():void
 	{
 		if($this->options['mode'] === 'select')
 		{
