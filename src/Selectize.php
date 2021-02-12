@@ -336,7 +336,7 @@ class Selectize extends Nette\Forms\Controls\BaseControl
 	}
 
 
-	public static function register($method = 'addSelectize', $config)
+	public static function register(string $method = 'addSelectize', array $config = []): void
 	{
 		Nette\Forms\Container::extensionMethod($method, function(Nette\Forms\Container $container, $name, $label, $entity = null, array $options = null) use ($config)
 		{
